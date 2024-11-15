@@ -1,7 +1,7 @@
 import { vitePlugin as remix } from '@remix-run/dev'
+import { remixDevTools } from 'remix-development-tools'
 import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
-import { remixDevTools } from 'remix-development-tools'
 
 const MODE = process.env.NODE_ENV
 const IS_PROD = MODE === 'production'
