@@ -6,6 +6,12 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 const MODE = process.env.NODE_ENV
 const IS_PROD = MODE === 'production'
 
+declare module '@remix-run/node' {
+  interface Future {
+    v3_singleFetch: true
+  }
+}
+
 export default defineConfig({
   build: {
     cssMinify: IS_PROD,
