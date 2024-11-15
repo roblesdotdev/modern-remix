@@ -4,16 +4,16 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
-import type { MetaFunction } from "@remix-run/node";
-import "./tailwind.css";
+} from '@remix-run/react'
+import type { MetaFunction } from '@remix-run/node'
+import './tailwind.css'
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Modern Remix" },
-    { name: "description", content: "Welcome to modern Remix!" },
-  ];
-};
+    { title: 'Modern Remix' },
+    { name: 'description', content: 'Welcome to modern Remix!' },
+  ]
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -30,9 +30,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Scripts />
       </body>
     </html>
-  );
+  )
 }
 
 export default function App() {
-  return <Outlet />;
+  return <Outlet />
 }
